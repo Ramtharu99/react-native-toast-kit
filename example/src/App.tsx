@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Toast, ToastProvider } from 'react-native-toast-kit';
+import { Toast, ToastProvider } from 'react-native-smart-toast-kit';
 
 const buttons = [
   {

@@ -1,4 +1,4 @@
-<h1 align="center">react-native-toast-kit</h1>
+<h1 align="center">react-native-smart-toast-kit</h1>
 
 <p align="center">
   Glass-style toast notifications for React Native CLI.<br />
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-native-toast-kit"><img alt="npm" src="https://img.shields.io/npm/v/react-native-toast-kit?color=0A84FF" /></a>
+  <a href="https://www.npmjs.com/package/react-native-smart-toast-kit"><img alt="npm" src="https://img.shields.io/npm/v/react-native-smart-toast-kit?color=0A84FF" /></a>
   <img alt="platforms" src="https://img.shields.io/badge/platforms-iOS%20%7C%20Android-30D158" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-ready-3178C6" />
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-8E8E93" /></a>
@@ -34,9 +34,9 @@
 ## 📦 Install
 
 ```sh
-npm install react-native-toast-kit
+npm install react-native-smart-toast-kit
 # or
-yarn add react-native-toast-kit
+yarn add react-native-smart-toast-kit
 ```
 
 No pods, no linking, no extra dependencies.
@@ -46,7 +46,7 @@ No pods, no linking, no extra dependencies.
 Wrap your app once:
 
 ```tsx
-import { ToastProvider } from 'react-native-toast-kit';
+import { ToastProvider } from 'react-native-smart-toast-kit';
 
 export default function Root() {
   return (
@@ -60,7 +60,7 @@ export default function Root() {
 Then call it from anywhere:
 
 ```tsx
-import { Toast } from 'react-native-toast-kit';
+import { Toast } from 'react-native-smart-toast-kit';
 
 Toast.success('Saved', 'Your changes are live.');
 Toast.error('Upload failed', 'Check your connection.');

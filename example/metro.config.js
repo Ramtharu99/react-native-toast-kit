@@ -13,7 +13,7 @@ const root = path.resolve(__dirname, '..');
 const config = withMetroConfig(getDefaultConfig(__dirname), {
   root,
   dirname: __dirname,
-  conditions: ['react-native-toast-kit-source'],
+  conditions: ['react-native-smart-toast-kit-source'],
 });
 
 module.exports = config;

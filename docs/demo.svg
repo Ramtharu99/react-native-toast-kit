@@ -3,7 +3,7 @@
 <linearGradient id="bgios" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EEF9"/><stop offset="1" stop-color="#F7E9F3"/></linearGradient>
 <linearGradient id="bgandroid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF4F1"/><stop offset="1" stop-color="#EDEAF7"/></linearGradient>
 </defs>
-<text x="380" y="40" text-anchor="middle" font-size="20" font-weight="800" fill="#8E8E93" font-family="-apple-system,Helvetica,Arial,sans-serif">react-native-toast-kit</text>
+<text x="380" y="40" text-anchor="middle" font-size="20" font-weight="800" fill="#8E8E93" font-family="-apple-system,Helvetica,Arial,sans-serif">react-native-smart-toast-kit</text>
 <g transform="translate(50 70)">
 <rect width="280" height="560" rx="46" fill="#1C1C1E"/>
 <rect x="1.5" y="1.5" width="277" height="557" rx="44.5" fill="none" stroke="#3A3A3C" stroke-width="3"/>
