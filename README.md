@@ -6,6 +6,10 @@
 </p>
 
 <p align="center">
+  <img src="docs/demo.svg" alt="Animated demo of toasts on an iPhone and an Android phone" width="640" />
+</p>
+
+<p align="center">
   <img src="docs/preview.svg" alt="Preview of success, error, warning, info and default toasts in light and dark mode" width="720" />
 </p>
 
