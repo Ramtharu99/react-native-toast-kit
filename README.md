@@ -1,37 +1,61 @@
 # react-native-toast-kit
 
-A lightweight, customizable toast notification library for React Native CLI applications. Provides beautiful success, error, warning, and info notifications with smooth animations, flexible positioning, customizable colors, icons, and display duration. Easy to integrate and built with TypeScript for a better developer experience.
+Glass-style toast notifications for React Native CLI. Pure JS: no native modules, no pods, no linking, no extra dependencies.
 
-## Installation
-
+## Install
 
 ```sh
 npm install react-native-toast-kit
 ```
 
-
 ## Usage
 
+Wrap your app once:
 
-```js
-import { multiply } from 'react-native-toast-kit';
+```tsx
+import { ToastProvider } from 'react-native-toast-kit';
 
-// ...
-
-const result = multiply(3, 7);
+export default function Root() {
+  return (
+    <ToastProvider>
+      <App />
+    </ToastProvider>
+  );
+}
 ```
 
+Then call it from anywhere, including outside components:
 
-## Contributing
+```tsx
+import { Toast } from 'react-native-toast-kit';
 
-- [Development workflow](CONTRIBUTING.md#development-workflow)
-- [Sending a pull request](CONTRIBUTING.md#sending-a-pull-request)
-- [Code of conduct](CODE_OF_CONDUCT.md)
+Toast.success('Saved', 'Your changes are live.');
+Toast.error('Upload failed', 'Check your connection.');
+Toast.warning('Low storage');
+Toast.info('New version available');
+Toast.message('Copied', undefined, { position: 'bottom' });
+```
+
+## Options
+
+| Option           | Type                                                    | Default |
+| ---------------- | ------------------------------------------------------- | ------- |
+| `type`           | `'success' \| 'error' \| 'warning' \| 'info' \| 'default'` | `default` |
+| `title`          | `string`                                                |         |
+| `message`        | `string`                                                |         |
+| `duration`       | `number` (ms, `0` = until dismissed)                    | `3000`  |
+| `position`       | `'top' \| 'bottom'`                                     | `top`   |
+| `offset`         | `number`                                                | `0`     |
+| `swipeToDismiss` | `boolean`                                               | `true`  |
+| `onPress`        | `() => void`                                            |         |
+| `onHide`         | `() => void`                                            |         |
+
+`Toast.show(options)` accepts all of these and returns an id; `Toast.hide(id?)` removes one toast, or all of them.
+
+## Look
+
+Each type has its own color (green, red, amber, blue, grey), with light and dark mode support, a translucent glass body, specular highlight, spring animation and swipe-to-dismiss.
 
 ## License
 
 MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
